@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Fuente';
+    src: url(Amontesa.ttf);
+  }
+
+body {
+    background-color: rgb(92, 92, 92);
+  }
+  
+  h1 {
+    color:black;
+    font-size: 100px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 0px;
+  }
+  
+  h2 {
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  
+  img {
+    float: left; /* o right si quieres alinearla a la derecha */
+  margin-right: 10px;
+    height: 100px;
+    width: 90px;
+
+  }
+  .logo {
+    float: left; /* o right si quieres alinearla a la derecha */
+    margin-left: 600px;
+    text-align:center;
+  }
+
+
+
+  p {
+    color: rgb(0, 0, 0);
+  }
