@@ -35,6 +35,44 @@ body {
     margin-left: 600px;
     text-align:center;
   }
+  .ps{
+    float: left; /* o right si quieres alinearla a la derecha */
+    margin-left: 600px;
+    text-align:center;
+    margin-top: 0px;
+  }
+  .uno {
+    margin-left: 850px;
+    height: 30%;
+    width: 50%;
+    margin-top: 100px;
+  }
+  .dos {
+    margin-left: 850px;
+    margin-top: 150px;
+    height: 30%;
+    width: 50%;
+  }
+  .tres{
+    margin-left: 850px;
+    margin-top: 150px;
+    size: 500px;
+  }
+  .videojuego1 {
+    margin-left: 850px;
+    margin-top: 150px;
+    size: 500px;
+  }
+  .videojuego2{
+    margin-left: 850px;
+    margin-top: 150px;
+    size: 500px;
+  }
+  .videojuego3 {
+    margin-left: 850px;
+    margin-top: 150px;
+    size: 500px;
+  }
 
 
 
