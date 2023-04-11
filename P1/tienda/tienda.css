@@ -21,8 +21,6 @@ body {
     text-align: center;
     margin-top: 15px;
   }
-
-  
   img {
     float: left;/*  o right si quieres alinearla a la derecha*/
   margin-right: 10px;
@@ -30,6 +28,8 @@ body {
     width: 90px;
 
   } 
+  
+ 
   .logo {
     float: left; /* o right si quieres alinearla a la derecha */
     margin-left: 600px;
@@ -83,7 +83,15 @@ body {
     margin-top: 150px;
     height: 10px;
   }
-
+  .fifa{
+     
+    margin-left: 50px;
+    text-align:center;
+    margin-top: 0px;
+    font-size: 20%;
+    width: 20%;
+    margin-top: 80px;
+  }
 
 
   p {
