@@ -1,35 +1,36 @@
 const http = require('http');
-const url = require('url');
+const fs = require('fs');
 
-const PUERTO = 8080;
+const PUERTO = 9000;
 
-//-- Texto HTML
-const pagina = `
+// Se crea el servidor
+const server = http.createServer((req, res) => {
+  let myURL = new URL (req.url, 'http://' + req.headers['host']);
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Happy Server!</title>
-</head>
-<body style="background-color: lightblue">
-    <h1 style="color: green">HAPPY SERVER!!!</h1>
-</body>
-</html>
-`
+  let page = "";
 
-const server = http.createServer((req, res)=>{
-    console.log("Petición recibida!");
+  //Se llama a la página principal por defecto
+   if (myURL.pathname != "/"){
+       page += "."+ myURL.pathname
+     } else{
+         page += "tienda.html"
+     }
 
-    res.statusCode = 200;
-    res.statusMessage = "OK";
-    res.setHeader('Content-Type','text/html');
-    res.write(pagina);
+  fs.readFile(page, function(error, data) {
+
+    if (error) {
+      // Si se pide un recurso que no existe, salta la página de error
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      return fs.createReadStream('error.html').pipe(res)
+    } 
+
+    res.write(data);
     res.end();
+  });
+
+
 });
 
 server.listen(PUERTO);
 
-console.log("Ejemplo 6. Happy Server HTML!. Escuchando en puerto: " + PUERTO);
+console.log("Escuchando en puerto: " + PUERTO);

@@ -2,6 +2,10 @@
     font-family: 'Fuente';
     src: url(Amontesa.ttf);
   }
+  @font-face {
+    font-family: 'Fuente1';
+    src: url(Spring\ Snowstorm.ttf);
+  }
 
 body {
     background-color: rgb(92, 92, 92);
@@ -97,3 +101,13 @@ body {
   p {
     color: rgb(0, 0, 0);
   }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Fuente1';
+    font-size: 150%;
+  }
+  
