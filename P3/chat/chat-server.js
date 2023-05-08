@@ -1,5 +1,5 @@
 //-- Cargar las dependencias
-const socketServer = require('socket.io').Server;
+const socket = require('socket.io');
 const http = require('http');
 const express = require('express');
 const colors = require('colors');
@@ -13,12 +13,12 @@ const app = express();
 const server = http.Server(app);
 
 //-- Crear el servidor de websockets, asociado al servidor http
-const io = new socketServer(server);
+const io = socket(server);
 
 //-------- PUNTOS DE ENTRADA DE LA APLICACION WEB
 //-- Definir el punto de entrada principal de mi aplicación web
 app.get('/', (req, res) => {
-  res.send('Bienvenido a mi aplicación Web!!!' + '<p><a href="/Ej-07.html">Test</a></p>');
+  res.send('Bienvenido a mi aplicación Web!!!' + '<p><a href="/chat.html">Test</a></p>');
 });
 
 //-- Esto es necesario para que el servidor le envíe al cliente la
@@ -39,12 +39,12 @@ io.on('connect', (socket) => {
     console.log('** CONEXIÓN TERMINADA **'.yellow);
   });  
 
-  //-- Mensaje recibido: Hacer eco
+  //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
   socket.on("message", (msg)=> {
     console.log("Mensaje Recibido!: " + msg.blue);
 
-    //-- Hacer eco
-    socket.send(msg);
+    //-- Reenviarlo a todos los clientes conectados
+    io.send(msg);
   });
 
 });
@@ -53,4 +53,3 @@ io.on('connect', (socket) => {
 //-- ¡Que empiecen los juegos de los WebSockets!
 server.listen(PUERTO);
 console.log("Escuchando en puerto: " + PUERTO);
-app.use('/', express.static(__dirname +'/'));

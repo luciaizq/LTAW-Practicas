@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Fuente';
+    src: url(Amontesa.ttf);
+  }
+  @font-face {
+    font-family: 'Fuente1';
+    src: url(Spring\ Snowstorm.ttf);
+  }
+body {
+    background-color: rgb(92, 92, 92);
+  }
+  h1 {
+    font-family: 'Fuente';
+    color:black;
+    font-size: 70px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 0px;
+  }
