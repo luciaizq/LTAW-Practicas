@@ -12,8 +12,27 @@ body {
   h1 {
     font-family: 'Fuente';
     color:black;
+    font-size: 40px;
+    margin: 8px;
+    margin-top: 0px;
+  }
+  h2 {
+    font-family: 'Fuente';
+    color:black;
     font-size: 70px;
     text-align: center;
     margin: 8px;
     margin-top: 0px;
+  }
+
+  p {
+    font-family: 'Fuente';
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 0px;
+  }
+  .msg_entry{
+    text-align: center;
   }

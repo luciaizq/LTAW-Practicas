@@ -1,6 +1,6 @@
 //-- Elementos del interfaz
 const display = document.getElementById("display");
-const user = document.getElementById("msg_entry");
+const msg_entry = document.getElementById("msg_entry");
 
 //-- Crear un websocket. Se establece la conexión con el servidor
 const socket = io();
@@ -11,10 +11,10 @@ socket.on("message", (msg)=>{
 });
 
 //-- Al apretar el botón se envía un mensaje al servidor
-user.onchange = () => {
-  if (user.value)
-    socket.send(user.value);
+msg_entry.onchange = () => {
+  if (msg_entry.value)
+    socket.send(msg_entry.value);
   
   //-- Borrar el mensaje actual
-  user.value = "";
+  msg_entry.value = "";
 }

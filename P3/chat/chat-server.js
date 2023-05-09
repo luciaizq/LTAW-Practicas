@@ -27,16 +27,21 @@ app.use('/', express.static(__dirname +'/'));
 
 //-- El directorio publico contiene ficheros estáticos
 app.use(express.static('public'));
-
+// 0 usuarios
+let num = 0;
 //------------------- GESTION SOCKETS IO
 //-- Evento: Nueva conexion recibida
 io.on('connect', (socket) => {
   
   console.log('** NUEVA CONEXIÓN **'.yellow);
-
+  socket.write('Usuario unido');
+  // se le suma un usuario al número
+   num += 1;
   //-- Evento de desconexión
   socket.on('disconnect', function(){
     console.log('** CONEXIÓN TERMINADA **'.yellow);
+    // se le resta 1 al usuario 1
+    num -= 1;
   });  
 
   //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
