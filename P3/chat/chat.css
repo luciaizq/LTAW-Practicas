@@ -7,32 +7,24 @@
     src: url(Spring\ Snowstorm.ttf);
   }
 body {
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(102, 102, 102);
   }
   h1 {
-    font-family: 'Fuente';
+    font-family: 'Fuente1';
     color:black;
     font-size: 40px;
     margin: 8px;
     margin-top: 0px;
   }
-  h2 {
-    font-family: 'Fuente';
-    color:black;
-    font-size: 70px;
+  
+  p {
+    font-family: 'Fuente1';
+    color:rgb(4, 4, 48);
+    font-size: 40px;
     text-align: center;
     margin: 8px;
     margin-top: 0px;
+  
   }
 
-  p {
-    font-family: 'Fuente';
-    color:black;
-    font-size: 20px;
-    text-align: center;
-    margin: 8px;
-    margin-top: 0px;
-  }
-  .msg_entry{
-    text-align: center;
-  }
+  

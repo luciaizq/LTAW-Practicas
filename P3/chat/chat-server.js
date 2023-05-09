@@ -18,7 +18,7 @@ const io = socket(server);
 //-------- PUNTOS DE ENTRADA DE LA APLICACION WEB
 //-- Definir el punto de entrada principal de mi aplicación web
 app.get('/', (req, res) => {
-  res.send('Bienvenido a mi aplicación Web!!!' + '<p><a href="/chat.html">Test</a></p>');
+  res.send('Accede al chat online' + '<p><a href="/chat.html">Chat</a></p>');
 });
 
 //-- Esto es necesario para que el servidor le envíe al cliente la
@@ -34,7 +34,7 @@ let num = 0;
 io.on('connect', (socket) => {
   
   console.log('** NUEVA CONEXIÓN **'.yellow);
-  socket.write('Usuario unido');
+  socket.write('Bienvenido');
   // se le suma un usuario al número
    num += 1;
   //-- Evento de desconexión
@@ -46,7 +46,7 @@ io.on('connect', (socket) => {
 
   //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
   socket.on("message", (msg)=> {
-    console.log("Mensaje Recibido!: " + msg.blue);
+    console.log("Mensaje Recibido!: " + msg.black);
 
     //-- Reenviarlo a todos los clientes conectados
     io.send(msg);

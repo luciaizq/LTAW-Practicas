@@ -11,7 +11,7 @@ const socket = io();
 let sonido = new Audio('tono.mp3');
 
 socket.on("message", (msg)=>{
-  display.innerHTML += '<p style="color:blue">' + msg + '</p>';
+  display.innerHTML +=  msg + '</p>';
 });
 
 //-- Al apretar el botón se envía un mensaje al servidor
@@ -25,10 +25,10 @@ msg_entry.onchange = () => {
   //añado sonido de mensaje
   sonido.play();
 }
-// Al cambiar el valor usuario...
+// Al cambiar el valor usuario
 usuario.onchange = () => {
   if (usuario.value )
-  // el usuario pasa a llamarse como lo has declarado tu
+  // el usuario pasa a llamarse como se ha declarado
   User = usuario.value;
   console.log("nombre usuario"+ usuario.value);
   // Desaparece el display que te permite cambiar el nombre
