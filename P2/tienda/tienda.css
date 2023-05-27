@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Fuente';
+    src: url(Amontesa.ttf);
+  }
+  @font-face {
+    font-family: 'Fuente1';
+    src: url(Spring\ Snowstorm.ttf);
+  }
+
+body {
+    background-color: rgb(92, 92, 92);
+  }
+  
+  h1 {
+    color:black;
+    font-size: 100px;
+    text-align: center;
+    margin: 8px;
+    margin-top: 0px;
+  }
+  
+  h2 {
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  img {
+    float: left;/*  o right si quieres alinearla a la derecha*/
+  margin-right: 10px;
+    height: 100px;
+    width: 90px;
+
+  } 
+  
+ 
+  .logo {
+    float: left; /* o right si quieres alinearla a la derecha */
+    margin-left: 600px;
+    text-align:center;
+  }
+  .ps{
+     
+    margin-left: 50px;
+    text-align:center;
+    margin-top: 0px;
+    font-size: 20%;
+  }
+  .nintendo{
+     
+    margin-left: 50px;
+    text-align:center;
+    margin-top: 0px;
+    font-size: 20%;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .uno {
+    margin-left: 850px;
+    height: 30%;
+    width: 130%;
+    margin-top: 100px;
+  }
+  .dos {
+    margin-left: 850px;
+    margin-top: 150px;
+    height: 30%;
+    width: 50%;
+  }
+  .tres{
+    margin-left: 850px;
+    margin-top: 150px;
+    size: 500px;
+  }
+  .videojuego1 {
+    margin-left: 850px;
+    margin-top: 150px;
+    
+  }
+  .videojuego2{
+    margin-left: 850px;
+    margin-top: 150px;
+    height: 10px;
+  }
+  .videojuego3 {
+    margin-left: 850px;
+    margin-top: 150px;
+    height: 10px;
+  }
+  .fifa{
+     
+    margin-left: 50px;
+    text-align:center;
+    margin-top: 0px;
+    font-size: 20%;
+    width: 20%;
+    margin-top: 80px;
+  }
+
+
+  p {
+    color: rgb(0, 0, 0);
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Fuente1';
+    font-size: 150%;
+  }
+  
