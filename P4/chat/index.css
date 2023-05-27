@@ -1,19 +1,35 @@
+@font-face {
+    font-family: 'Fuente';
+    src: url(Amontesa.ttf);
+  }
+  @font-face {
+    font-family: 'Fuente1';
+    src: url(Spring\ Snowstorm.ttf);
+  }
 body{
     background-color: grey;
     text-align: center;
 }
 
-h2{
+h1{
+    font-family: 'Fuente';
     color: rgb(0, 0, 0); 
     font-size: 30px;
+} 
+h2{
+    font-family: 'Fuente';
+    color: rgb(104, 3, 72); 
+    font-size: 15px;
 }
 
-h2{
-    color: rgb(104, 3, 72); 
+p{
+    font-family: 'Fuente1';
+    color: rgb(0, 0, 0); 
     font-size: 20px;
 }
 
 li{
+    font-family: 'Fuente1';
     color: rgb(10, 10, 10); 
-    font-size: 15px;
+    font-size: 20px;
 }
