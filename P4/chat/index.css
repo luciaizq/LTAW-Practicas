@@ -4,7 +4,16 @@ body{
 }
 
 h2{
-    color: rgb(104, 3, 72); 
-    font-size: 70px;
+    color: rgb(0, 0, 0); 
+    font-size: 30px;
 }
 
+h2{
+    color: rgb(104, 3, 72); 
+    font-size: 20px;
+}
+
+li{
+    color: rgb(10, 10, 10); 
+    font-size: 15px;
+}

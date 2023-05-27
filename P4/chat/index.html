@@ -14,25 +14,33 @@
 
     <!-- Cargar el proceso asociado a esta página -->
     <script src="index.js" defer></script>
+    <script src="client.js" defer></script>
 
-    <title>CHAT SERVER</title>
+    <title>Chat</title>
 </head>
 <body>
-    <h1>INTERFAZ GRÁFICA</h1>
-
-    <hr>
+    <h1>Chat</h1>
     <h2>Información:</h2>
-    <ul>
         <li>Arquitectura: <span id="info1" class="blue"></span> </li>
         <li>Plataforma: <span id="info2" class="blue"></span></li>
         <li>Diretorio: <span id="info3" class="blue"></span></li>
-        <li>Dirección ip:<span id="ip-address" class="blue"></span> </li>
-        
-    </ul>
+        <li>Version de Node:  <span id='Vnode' class="blue"></span></li>
+        <li>Versión de Chrome:  <span id='Vchrome' class="blue"></span></li>
+        <li>Versión electrón:  <span id='Velectron' class="blue"></span></li>
+        <li>Numero de usuarios conectados: <span id='numeroclientes' class="blue"></span></li>
+    <br>
+    <h2> Dirección IP:</h2> <span id='ip' class="blue"></span>
+    </div>
 
-    <hr>
-    <p>   <input type="button" value="Test" id="btn_test"> </p>
-   <p>Display:</p>
+<div class="Prueba">
+    <br>
+    <h2> Botón de prueba </h2>
+    <p>   <input type="button" value="Prueba" id="btn_test"> </p>
+    <h2> MENSAJES</h2>
     <p id="display"></p>
+
+</div>
+</div>
+
 </body>
 </html>
